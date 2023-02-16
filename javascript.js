@@ -22,7 +22,9 @@ function createGrid(){
 //call upon the function to create the grid.
 createGrid();
 
-//create a grid variable that imports all
+//create a grid variable that imports all grid classes and attaches an event listener to all of them
+// that waits for the cursor to hover. Once the cursor is hovering the background color of that div 
+// block will turn to a different color.
 const grid = document.querySelectorAll('.grid');
 grid.forEach((grid) => {
     grid.addEventListener('mouseover', function (e){
@@ -30,11 +32,6 @@ grid.forEach((grid) => {
         e.target.style.backgroundColor = 'yellow';
     });
 });
-// div.addEventListener('mouseover', function (e){
-//     console.log(e);
-//     e.target.style.backgroundColor = 'yellow';
-//     grid.style.backgroundColor = 'yellow';
-// });
 
 
 
